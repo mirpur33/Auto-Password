@@ -100,6 +100,8 @@ function getRandom(arr) {
 
 // Function to generate password with user input
 function generatePassword() {
+
+  let availableCharacters = [];
 let length=parseInt(prompt("what is your password length (8-128)?"));
 if (isNaN(length)){
   alert("password length has to be beween 8-128. Please retry");
@@ -111,6 +113,11 @@ if (length < 8 || length > 128){
   return "password length has to be beween 8-128. Please retry by pressing generate button";
 }
 
+let haveLower = confirm("press OK to include lower case character in password");
+if (haveLower){
+  availableCharacters = availableCharacters.concat(lowerCasedCharacters);
+}
+console.log("availableCharacters = ", availableCharacters);
 }
 
 // generatePassword();
