@@ -137,7 +137,10 @@ if (haveNumbers){
 }
 console.log("availableCharacters = ", availableCharacters);
 
-
+if (availableCharacters.length === 0){
+  alert("At least one character type should be selected. Please retry");
+  return "At least one character type should be selected. Please retry by pressing generate button";
+}
 }
 
 // generatePassword();
