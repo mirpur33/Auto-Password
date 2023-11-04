@@ -125,6 +125,13 @@ if (haveUpper){
 }
 console.log("availableCharacters = ", availableCharacters);
 
+let haveSpecial = confirm("press OK to include special character in password");
+if (haveSpecial){
+  availableCharacters = availableCharacters.concat(specialCharacters);
+}
+console.log("availableCharacters = ", availableCharacters);
+
+
 }
 
 // generatePassword();
