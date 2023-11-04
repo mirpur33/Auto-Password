@@ -118,6 +118,13 @@ if (haveLower){
   availableCharacters = availableCharacters.concat(lowerCasedCharacters);
 }
 console.log("availableCharacters = ", availableCharacters);
+
+let haveUpper = confirm("press OK to include upper case character in password");
+if (haveUpper){
+  availableCharacters = availableCharacters.concat(upperCasedCharacters);
+}
+console.log("availableCharacters = ", availableCharacters);
+
 }
 
 // generatePassword();
