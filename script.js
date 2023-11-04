@@ -101,7 +101,10 @@ function getRandom(arr) {
 // Function to generate password with user input
 function generatePassword() {
 let length=parseInt(prompt("what is your password length (8-128)?"));
-
+if (isNaN(length)){
+  alert("password length has to be beween 8-128. Please retry");
+  return "password length has to be beween 8-128. Please retry by pressing generate button";
+}
 
 }
 
