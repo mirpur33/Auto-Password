@@ -106,6 +106,11 @@ if (isNaN(length)){
   return "password length has to be beween 8-128. Please retry by pressing generate button";
 }
 
+if (length < 8 || length > 128){
+  alert("password length has to be beween 8-128. Please retry");
+  return "password length has to be beween 8-128. Please retry by pressing generate button";
+}
+
 }
 
 // generatePassword();
