@@ -131,6 +131,12 @@ if (haveSpecial){
 }
 console.log("availableCharacters = ", availableCharacters);
 
+let haveNumbers = confirm("press OK to include numbers in password");
+if (haveNumbers){
+  availableCharacters = availableCharacters.concat(numericCharacters);
+}
+console.log("availableCharacters = ", availableCharacters);
+
 
 }
 
